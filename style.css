@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+.card{
+    max-width: 450px;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 15px 50px rgb(184, 184, 184);
+}
+.text{
+    width:70%;
+    margin: auto;
+}
+.plan{
+    display:grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'icn title change'
+                          'icn price change';
+    background-color: hsl(225, 100%, 98%) ;
+    border-radius: 10px;
+}
+.music-icon{
+    grid-area: icn;
+    margin: auto; 
+    
+   
+}
+h2{
+    grid-area: title;
+    margin-bottom: -2.5%;
+    text-align: left;
+}
+.price{
+    grid-area: price;
+    margin-top: 2.5%;
+    text-align: left;
+}
+.change{
+    grid-area: change;
+    margin: auto;
+}
+.change:hover{
+    color: #7e75d4;
+}
+
+.btn-proceed{
+    width: 80%;
+    height: 45px;
+    margin-top: 30px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 10px 10px rgb(184, 184, 184);
+}
+.link-proceed{
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+.btn-proceed:hover{
+    background-color: #766cf1;
+}
+
+.cancel{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    
+    
+}
+.link-cancel{
+    text-decoration: none;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    
+}
+.link-cancel:hover{
+    color:#3e445d
+}
+
+.girl{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.description,.price{
+    color:hsl(224, 23%, 55%);
+    font-weight: 300;
+}
+
+.big-title, h2{
+    color:hsl(223, 47%, 23%);
+    ;
+}
+
+@media (max-width:375px) {
+    .girl{
+        width: 100%;
+    }
+    .text{
+        width:90%;
+    }
+    .plan,.btn-proceed,.cancel{
+        width:100%;
+    }
+    
+}
+
+footer {
+    margin-top: 20px;
+}
