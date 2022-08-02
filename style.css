@@ -57,6 +57,7 @@ h2{
 }
 .change:hover{
     color: #7e75d4;
+    text-decoration: none;
 }
 
 .btn-proceed{
