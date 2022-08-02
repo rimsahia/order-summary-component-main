@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
 body{
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
-    
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
 }
 .card{
     max-width: 450px;
@@ -103,6 +109,10 @@ h2{
     ;
 }
 
+footer {
+    margin-top: 20px;
+}
+
 @media (max-width:375px) {
     .girl{
         width: 100%;
@@ -113,9 +123,10 @@ h2{
     .plan,.btn-proceed,.cancel{
         width:100%;
     }
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
     
 }
 
-footer {
-    margin-top: 20px;
-}
