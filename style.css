@@ -127,6 +127,14 @@ footer {
     body{
         background-image: url(/images/pattern-background-mobile.svg);
         background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card{
+        margin: 15px;
+        
+    }
+    .plan,.btn-proceed,.cancel{
+        width: 85%;
     }
     
 }
